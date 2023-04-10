@@ -1,0 +1,132 @@
+*, *:after, *:before {
+	 box-sizing: border-box;
+}
+ body {
+	 font-family: "Helvetica Neue", Arial, sans-serif;
+	 background: #e3deec;
+	 height: 100vh;
+	 overflow: hidden;
+}
+ button {
+	 border: none;
+	 padding: 12px 20px;
+	 background: #e3deec;
+	 color: #634d9a;
+	 border-radius: 100vh;
+	 outline: none;
+	 text-transform: uppercase;
+	 font-weight: bold;
+	 letter-spacing: 1px;
+	 cursor: pointer;
+	 transition: background 300ms ease, color 300ms ease;
+	 margin-bottom: 40px;
+}
+ button .fa-angle-right {
+	 font-size: 24px;
+	 vertical-align: middle;
+	 color: #b1a6cc;
+	 padding-left: 5px;
+	 padding-bottom: 3px;
+	 transition: color 300ms ease;
+	 position: relative;
+	 left: 0;
+}
+
+ button:active {
+	 background: #634d9a;
+	 color: #e3deec;
+}
+ button:active .fa-angle-right {
+	 color: #e3deec;
+}
+ .container {
+	 width: 600px;
+	 background: white;
+	 margin: 100px auto;
+	 border-radius: 20px;
+	 display: flex;
+	 flex-direction: column;
+	 padding: 20px;
+	 box-shadow: 0px 20px 200px -40px #634d9a;
+	 position: relative;
+}
+ .color-block {
+	 position: absolute;
+	 top: 50px;
+	 left: -45px;
+	 width: 280px;
+	 height: 280px;
+	 background: #634d9a;
+	 border-radius: 20px;
+	 box-shadow: 30px 30px 30px 0px #dcd7e8;
+}
+ .date {
+	 font-family: "Old Standard TT", Lucida Console, serif;
+	 position: absolute;
+	 font-size: 230px;
+	 color: #dcd7e8;
+	 top: -105px;
+	 left: 40px;
+	 z-index: -1;
+}
+ .date:hover {
+	 cursor: default;
+}
+ .timeline {
+	 color: #b1a6cc;
+	 font-size: 16px;
+	 position: absolute;
+	 top: 160px;
+	 right: -80px;
+	 display: flex;
+	 justify-content: space-between;
+	 height: 330px;
+	 writing-mode: vertical-rl;
+}
+ .timeline .selected-year {
+	 font-weight: 600;
+}
+ .content {
+	 margin-left: 48%;
+	 width: 44%;
+}
+ .title {
+	 font-family: "Playfair Display", Lucida Console, serif;
+	 margin: 0;
+	 font-weight: 700;
+	 color: #634d9a;
+}
+ .serial {
+	 margin-top: 50px;
+	 color: #dcd7e8;
+}
+ .flavor-text {
+	 margin-bottom: 30px;
+	 font-size: 13px;
+	 line-height: 24px;
+	 color: #b1a6cc;
+}
+ .icons {
+	 display: flex;
+	 justify-content: flex-end;
+}
+ .icons i {
+	 color: #dcd7e8;
+	 margin: 10px;
+	 font-size: 20px;
+}
+ .icons i:hover {
+	 cursor: pointer;
+	 color: #9181b7;
+}
+ @keyframes sway {
+	 0% {
+		 left: 0;
+	}
+	 50% {
+		 left: 5px;
+	}
+	 100% {
+		 left: 0;
+	}
+}
